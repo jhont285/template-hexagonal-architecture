@@ -5,6 +5,7 @@ import org.hexagonal.architecture.usecase.TemplateUseCaseImp;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+@SuppressWarnings("checkstyle:MissingJavadocType")
 @Configuration
 public class AppContext {
 
