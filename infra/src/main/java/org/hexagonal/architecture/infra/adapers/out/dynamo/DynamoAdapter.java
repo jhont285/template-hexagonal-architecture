@@ -10,11 +10,11 @@ import java.util.stream.IntStream;
 
 
 @Service
-public class DynamoAdapter implements PersistencePort {
-    private static final List<String> RANDOM_NAMES =
-            List.of("John", "Emily", "Michael", "Sarah", "Christopher", "Emma", "Daniel", "Olivia", "Matthew", "Sophia");
-    private static final List<String> RANDOM_LASTNAMES =
-            List.of("Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez");
+public final class DynamoAdapter implements PersistencePort {
+    private static final List<String> RANDOM_NAMES = List.of("John", "Emily", "Michael", "Sarah", "Christopher",
+            "Emma", "Daniel", "Olivia", "Matthew", "Sophia");
+    private static final List<String> RANDOM_LASTNAMES = List.of("Smith", "Johnson", "Williams", "Brown", "Jones",
+            "Garcia", "Miller", "Davis", "Rodriguez", "Martinez");
     public static final Random RND = new Random();
 
     @Override
